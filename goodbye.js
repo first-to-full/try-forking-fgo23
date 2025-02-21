@@ -1,3 +1,6 @@
-export function goodBye() {
-  console.log("Hello World");
+export function goodBye(x) {
+  if (typeof x !== "string") return;
+  console.log(x);
 }
+
+goodBye("Goodbye");
